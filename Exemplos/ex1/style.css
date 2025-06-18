@@ -1,0 +1,55 @@
+body {
+	background-color: rgb(240, 255, 240);
+	color: rgb(128,128,128);
+	/* Adicionar mais estilos conforme necessário */
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	background-color: rgba(34, 212, 253, 1);
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	color: black;
+}
+
+a {
+    color: rgb(0, 0, 0);
+
+}
+
+button {
+	background-color: rgba(34, 212, 253, 1);
+	color: rgb(0, 0, 0);
+	border: none;
+	/* Adicionar mais estilos conforme necessário */
+	width: 280;
+	height: 79;
+	top: 681px;
+	left: 362px;
+	border-radius: 16px;
+	padding: 16px;
+	gap: 16px;
+}
+strong {
+	color: rgba(34, 212, 253, 1);
+	/* Adicionar mais estilos conforme necessário */
+}
+
+#sobre {
+	width: 615;
+	height: 482;
+	top: 278px;
+	left: 357px;
+}
+
+footer {
+	width: 100%;
+	height: 100px;
+	background-color: rgba(34, 212, 253, 1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+}
