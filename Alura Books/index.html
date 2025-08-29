@@ -64,7 +64,7 @@
         </section>
 
         <section class="carrossel">
-            <h2 class="carrossel__titulo">Novos lançamentos</h2>
+            <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
             <div class="swiper">
             <div class="swiper-pagination"></div>
 
@@ -185,8 +185,10 @@
         </section>
 
         <section class="contato">
-            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <div class="contato__descricao">
+                <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+                <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            </div>
             <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
         </section>
 
@@ -205,6 +207,16 @@
         const swiper = new Swiper('.swiper', {
             spaceBetween: 10,
             slidesPerView: 3,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                }
+            },
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
